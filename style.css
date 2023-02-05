@@ -45,6 +45,7 @@ button {
     background-color: white;
     margin: auto;
     display: flex;
+    border-radius: 15px;
 }
 
 footer {
