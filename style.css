@@ -7,6 +7,8 @@ header{
     color: rgba(10, 54, 65, 1);
     font-size: x-large;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav a:hover {
@@ -21,11 +23,14 @@ nav ul {
     text-decoration: underline;
 }
 
+
 h1, h2, h3 {
     font-family: 'DIN Alternate', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(10, 54, 65, 1);
     font-size: xx-large;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -47,16 +52,17 @@ nav a {
 
 button {
     font-family: 'DIN alternate', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     background-color: white;
     display: flex;
     margin: auto;
     border-radius: 15px;
+    border-color: rgba(10, 54, 65, 0.29);
     height: auto;
     width: auto;
     cursor: pointer;
-}
+    }
 
 footer {
     background-color: rgba(10, 54, 65, 0.49);
@@ -65,6 +71,17 @@ footer {
     font-size: x-large;
     text-align: center;
     padding: 10px;
+}
+
+.row, .column {
+    align-items: center;
+    padding: 10px;
+}
+
+#filterrow {
+    background:rgba(10, 54, 65, 0.1);
+    padding: 0;
+    margin: 0;
 }
 
 #footertextcolor {
@@ -90,6 +107,8 @@ footer {
     font-size: large;
     color:white;
 }
+
+
 
 .box {
     display:flex;
@@ -121,5 +140,11 @@ footer {
     background-color: rgba(10, 54, 65, 0.79);
     border-radius: 5px;
     cursor: pointer;
+}
+
+.aboutpictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
