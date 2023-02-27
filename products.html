@@ -25,68 +25,86 @@
                 <h1>Our products</h1>
             </section>
         <section>
-            <div class="row" id="filterrow">
+            <div class="filterrow">
                 <div class="column">
-                    <div id="filterbutton">
-                    <nav>
-                      <ul>
-                         <a id="filterbutton"><p>FILTERS</p></a>
-                         <a href="filtermens.html"><button id="filterbutton">MEN'S JACKETS</button></a>
-                         <a href="filterwomens.html"><button id="filterbutton">WOMEN'S JACKETS</button></a>
-                     </ul>
-                  </nav> 
-                  </div> 
+                    <div class="filterbutton">
+                         <a class="filterbutton"><p>FILTERS</p></a>
+                         <a href="filtermens.html"><button class="filterbutton">MEN'S JACKETS</button></a>
+                         <a href="filterwomens.html"><button class="filterbutton">WOMEN'S JACKETS</button></a>
+                </div> 
+              </div>
+            </div>
         </section>
         <section>  
             <h2>Men and women's rain jackets</h2>  
-            <div class="row">
-                <div class="column">
-                    <nav>
-                        <ul>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket1.png" alt="Jacket 1" style="width:20%"></a>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket4.png" alt="Jacket 4" style="width:20%"></a>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket6.png" alt="Jacket 6" style="width:20%"></a>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket5.png" alt="Jacket 5" style="width:20%"></a>
-                        </ul>
-                    </nav>
-               </div>
+            <div class="product">
+                <div class="products">
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket1.png" alt="Jacket 1">
+                            </a>
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket4.png" alt="Jacket 4">
+                            </a>
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket6.png" alt="Jacket 6">
+                            </a>
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket5.png" alt="Jacket 5">
+                            </a>
+                </div>
+            </div>
         </section>
         <section>
             <h3>Men and women's sport jackets</h3>
-            <div class="row">
-                <div class="column">
-                    <nav>
-                        <ul>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket3.png" alt="Jacket 3" style="width:20%"></a>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket2.png" alt="Jacket 2" style="width:20%"></a>
-                            <a href="productspecific.html"><img src="images/RainyDays_Jacket7.png" alt="Jacket 7" style="width:20%"></a>
-                       </ul>
-                   </nav>
+            <div class="product">
+                <div class="products">
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket3.png">
+                            </a>
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket2.png" alt="Jacket 2">
+                            </a>
+                            <a href="productspecific.html">
+                                <img src="images/RainyDays_Jacket7.png" alt="Jacket 7"></a>
+                </div>
            </div>
         </section>
     </main>
     <footer>
         <section>
             <nav>
-                <ul>
-                    <li><a href="index.html" id="footertextcolor">Home</a></li>
-                    <li><a href="products.html" id="footertextcolor">Our products</a></li>
-                    <li><a href="contact.html" id="footertextcolor">Contact us</a></li>
-                    <li><a href="about.html" id="footertextcolor">About us</a></li>
-                    <li><a href="history.html" id="footertextcolor">Our history</a></li>
-                    <li><a href="vision.html" id="footertextcolor">Our Vision</a></li>
-                </ul>
-            </nav>
-            <p id="footertextcolor">Follow us</p>
-            <nav>
-                <ul>
-                 <a href="https://instagram.com/"><img src="instagramlogo.jpg"></a>
+                <ul class="footerlist">
+                    <li><a href="index.html" class="footertextcolor">Home</a></li>
+                    <li><a href="products.html" class="footertextcolor">Our products</a></li>
+                    <li><a href="contact.html" class="footertextcolor">Contact us</a></li>
+                    <li>
+                        <a href="about.html" class="footertextcolor">About us</a>
+                        <ul>
+                           <li><a href="history.html" class="footertextcolor">Our history</a></li>
+                           <li><a href="vision.html" class="footertextcolor">Our Vision</a></li>
+                        </ul>
+                    </li>  
+                    <li> 
+                        <p class="footertextcolor follow-us">Follow us</p>
+                        <ul>
+                           <a href="https://instagram.com/"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" class="instalogo"></a>
+                        </ul>
+                    </li> 
                 </ul>
             </nav>
         </section>
-        <section>
-            <p id="footertextcolor">Sign up to recieve our latest news</p>
-            
-        </section>&copy; 2023 Rainy Days </footer>
+        <section class="subscribe-section">
+            <div>
+              <h3 id="signuptxt">Sign up to receive our latest news</h3>
+              <form>
+                <div class="input-container">
+                  <input type="email" id="email" name="email" placeholder="yourname@youraddress.com" required>
+                  <button type="submit" class="subscribebutton">Send</button>
+                </div>
+              </form>
+            </div>
+            <img src="images/RainyDays_Logo.png" class="bottomlogo"> 
+          </section>&copy; 2023 Rainy Days 
+        </footer>
 </body>
 </html>

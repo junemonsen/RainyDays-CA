@@ -12,8 +12,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Our products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Our products</a></li>
                 <a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo" style="width:20%"></a>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,57 +22,79 @@
     </header>
     <main>
         <div class="row">
-            <div class="column">
+            <div class="column1">
               <img src="images/RainyDays_Jacket1.png" alt="Orange-rainjacket" style="width:50%">
-              <div class="smallrow">
-                <img src="images/RainyDays_Jacket1.png" alt="Orange-rainjacketsmall">
-                <img src="images/RainyDays_Jacket1.png" alt="Orange-rainjacketsmall">
-                <img src="images/RainyDays_Jacket1.png" alt="Orange-rainjacketsmall">
-              </div>
             </div>
-            <div class="column">
-                <h1>RAINSTOM JACKET</h1>
+            <div class="column2">
+                <h1>RAINSTORM JACKET</h1>
                 <div class="row2">
-                    <div class="column2">
-                        <p>Orange and grey</p>
+                    <div class="column-inner">
+                        <p class="column2-text" id="orangeandgrey">Orange and grey</p>
+                        <p class="column2-text" id="NOKtxt">NOK 4 499,-</p>
+                    </div>
                 </div>
                 <div class="column3">
-                  <p>NOK 4 499</p>
-                  <p>Choose your size</p>  
+                  <p id="choosesize">Choose your size</p>       
+                  <div class="size-row">
+                    <button>XS</button>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                    <button>XXL</button>
+                </div>  
+                <div class="cartbutton">
+                    <button class="cartbutton">ADD TO CART</button>
+                </div>
+                  <p>Product info</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="productspecificmore.html">Read more</a></p>
+                </div>
             </div>
         </div>
         <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="productspecificmore.html">Read more</a></p>
-        </section>
-        <section>
             <h2>Related products</h2>
-            <img src="images/RainyDays_Jacket5.png">
-            <img src="images/RainyDays_Jacket4.png">
-            <img src="images/RainyDays_Jacket7.png">
+            <div class="relatedjackets">
+               <img src="images/RainyDays_Jacket5.png">
+               <img src="images/RainyDays_Jacket4.png">
+               <img src="images/RainyDays_Jacket7.png">
+            </div>
         </section>
     </main>
     <footer>
         <section>
             <nav>
-                <ul>
-                    <li><a href="index.html" id="footertextcolor">Home</a></li>
-                    <li><a href="products.html" id="footertextcolor">Our products</a></li>
-                    <li><a href="contact.html" id="footertextcolor">Contact us</a></li>
-                    <li><a href="about.html" id="footertextcolor">About us</a></li>
-                    <li><a href="history.html" id="footertextcolor">Our history</a></li>
-                    <li><a href="vision.html" id="footertextcolor">Our Vision</a></li>
-                </ul>
-            </nav>
-            <p id="footertextcolor">Follow us</p>
-            <nav>
-                <ul>
-                 <a href="https://instagram.com/"><img src="instagramlogo.jpg"></a>
+                <ul class="footerlist">
+                    <li><a href="index.html" class="footertextcolor">Home</a></li>
+                    <li><a href="products.html" class="footertextcolor">Our products</a></li>
+                    <li><a href="contact.html" class="footertextcolor">Contact us</a></li>
+                    <li>
+                        <a href="about.html" class="footertextcolor">About us</a>
+                        <ul>
+                           <li><a href="history.html" class="footertextcolor">Our history</a></li>
+                           <li><a href="vision.html" class="footertextcolor">Our Vision</a></li>
+                        </ul>
+                    </li>  
+                    <li> 
+                        <p class="footertextcolor follow-us">Follow us</p>
+                        <ul>
+                           <a href="https://instagram.com/"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" class="instalogo"></a>
+                        </ul>
+                    </li> 
                 </ul>
             </nav>
         </section>
-        <section>
-            <p id="footertextcolor">Sign up to recieve our latest news</p>
-            
-        </section>&copy; 2023 Rainy Days </footer>
+        <section class="subscribe-section">
+            <div>
+              <h3 id="signuptxt">Sign up to receive our latest news</h3>
+              <form>
+                <div class="input-container">
+                  <input type="email" id="email" name="email" placeholder="yourname@youraddress.com" required>
+                  <button type="submit" class="subscribebutton">Send</button>
+                </div>
+              </form>
+            </div>
+            <img src="images/RainyDays_Logo.png" class="bottomlogo"> 
+          </section>&copy; 2023 Rainy Days 
+        </footer>
 </body>
 </html>

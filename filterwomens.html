@@ -67,25 +67,38 @@
     <footer>
         <section>
             <nav>
-                <ul>
-                    <li><a href="index.html" id="footertextcolor">Home</a></li>
-                    <li><a href="products.html" id="footertextcolor">Our products</a></li>
-                    <li><a href="contact.html" id="footertextcolor">Contact us</a></li>
-                    <li><a href="about.html" id="footertextcolor">About us</a></li>
-                    <li><a href="history.html" id="footertextcolor">Our history</a></li>
-                    <li><a href="vision.html" id="footertextcolor">Our Vision</a></li>
-                </ul>
-            </nav>
-            <p id="footertextcolor">Follow us</p>
-            <nav>
-                <ul>
-                 <a href="https://instagram.com/"><img src="instagramlogo.jpg"></a>
+                <ul class="footerlist">
+                    <li><a href="index.html" class="footertextcolor">Home</a></li>
+                    <li><a href="products.html" class="footertextcolor">Our products</a></li>
+                    <li><a href="contact.html" class="footertextcolor">Contact us</a></li>
+                    <li>
+                        <a href="about.html" class="footertextcolor">About us</a>
+                        <ul>
+                           <li><a href="history.html" class="footertextcolor">Our history</a></li>
+                           <li><a href="vision.html" class="footertextcolor">Our Vision</a></li>
+                        </ul>
+                    </li>  
+                    <li> 
+                        <p class="footertextcolor follow-us">Follow us</p>
+                        <ul>
+                           <a href="https://instagram.com/"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" class="instalogo"></a>
+                        </ul>
+                    </li> 
                 </ul>
             </nav>
         </section>
-        <section>
-            <p id="footertextcolor">Sign up to recieve our latest news</p>
-            
-        </section>&copy; 2023 Rainy Days </footer>
+        <section class="subscribe-section">
+            <div>
+              <h3 id="signuptxt">Sign up to receive our latest news</h3>
+              <form>
+                <div class="input-container">
+                  <input type="email" id="email" name="email" placeholder="yourname@youraddress.com" required>
+                  <button type="submit" class="subscribebutton">Send</button>
+                </div>
+              </form>
+            </div>
+            <img src="images/RainyDays_Logo.png" class="bottomlogo"> 
+          </section>&copy; 2023 Rainy Days 
+        </footer>
 </body>
 </html>
