@@ -24,6 +24,7 @@ header{
     color:rgba(10, 54, 65, 1);
 }
 
+
 .icons a {
     color: rgba(10, 54, 65, 1);
 }
@@ -752,6 +753,61 @@ input[type=text], input[type=email], input[type=phone], select {
 
 
 
+/* Checkout success */
+ .image-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #thankyou-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ #checkoutsuccess {
+    width: 100px;
+ }
+
+#thankyou {
+    font-family: 'DIN COndensed';
+}
+
+#confirmation {
+    text-align: center;
+    font-size: large;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.orderconf {
+    font-family: 'DIN Condensed', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(10, 54, 65, 0.05);
+    padding: 5px 20px 5px 20px;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infotxt {
+    font-family: 'DIN Condensed' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
 /* media for products */
 
 @media (max-width:1400px) {
@@ -880,7 +936,12 @@ input[type=text], input[type=email], input[type=phone], select {
         transform: none;
         margin: 0 auto;
       }
+
+      nav ul li.logo {
+        display: none;
+      }
 }
+
 
 
 @media (max-width: 770px) {
@@ -925,72 +986,15 @@ input[type=text], input[type=email], input[type=phone], select {
       .footerlist li:hover ul {
         display: block;
       }
-}
 
-
-@media (max-width:770px) {
-/* Hamburger menu */
-
-
-.nav-toggle {
-    display: none;
-  }
-  .nav-toggle-label {
-    cursor: pointer;
-    display: block;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-  }
-  .nav-toggle-label span {
-    background-color: rgba(10, 54, 65, 1);
-    display: block;
-    height: 3px;
-    position: relative;
-    transition: background-color 0.2s ease-out;
-    width: 25px;
-  }
-  .nav-toggle-label span:first-child {
-    transform-origin: 0 0;
-  }
-  .nav-toggle-label span:nth-last-child(2) {
-    transform-origin: 0 100%;
-  }
-  .nav-toggle-label span.active {
-    background-color: transparent;
-  }
-  .nav-toggle-label span.active:first-child {
-    transform: rotate(45deg);
-  }
-  .nav-toggle-label span.active:nth-last-child(2) {
-    transform: rotate(-45deg);
-  }
-  .nav-toggle-label span.active:last-child {
-    transform: rotate(0);
-  }
-  
-  /* End of hamburger menu */
+      nav ul li.logo {
+        display: none;
+      }
 
 }
-  
-  @media screen and (max-width: 770px) {
-    nav ul {
-      display: none;
-    }
-    nav ul li {
-      display: block;
-      margin: 10px;
-    }
-    .nav-toggle {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav-toggle:checked ~ ul {
-      display: block;
-    }
-  }
+
+
+
 
   
   
