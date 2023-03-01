@@ -33,6 +33,29 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    white-space: nowrap;
+}
+
+nav ul li.logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li.logo img {
+    width: 150px;
+}
+
+
+nav ul li {
+    margin: 0 20px;
+}
+
 
 h1, h2, h3, h4 {
     font-family: 'DIN Alternate', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -70,6 +93,19 @@ button {
     cursor: pointer;
     margin:auto;
     }
+
+#viewbutton {
+    font-family: 'DIN Alternate', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: rgba(10, 54, 65, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border-color: rgba(10, 54, 65, 0.4);
+}
 
 nav a {
     color: rgba(10, 54, 65, 1);
@@ -154,6 +190,7 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+    display:block;
 }
 
 .footerlist li ul li {
@@ -161,7 +198,20 @@ footer {
     margin-bottom: 10px;
     padding-top: 10px;
     gap: 5px;
+    margin-right: 15px;
+    
 }
+
+.footerlist li.about ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  
 
 .follow-us {
     white-space: nowrap;
@@ -382,6 +432,12 @@ label {
     grid-column: flex;
 }
 
+#instoretxt {
+    font-size: small;
+    color: green;
+    margin-top: 10px;
+}
+
 .size-row {
     display: flex;
 }
@@ -547,25 +603,39 @@ textarea {
     .product, .products {
         grid-template-columns: repeat(3,1fr);
     }
-    .logo {
-        max-width: 20%;
-    }
+  
 }
 
 @media (max-width:1030px) {
     .product, .products {
         grid-template-columns: repeat(2,1fr);
     }
-    .logo {
-        max-width: 20%;
+
+    .column2 img {
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+
+    #h1txt {
+        font-size: x-large;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+    #NOKtxt {
+        margin-right: -21px;
+    }
+
+    #choosesize {
+        display: none;
+    }
+
+    .size-row {
+        margin-top: 10px;
     }
 }
 
-@media (max-width:750px) {
-    .product, .products {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
 
 @media (max-width:952px) {
     .submit-form {
@@ -586,5 +656,35 @@ textarea {
     .col {
         display:block;
         margin-bottom: 1rem;
+    }
+
+    header {
+        font-size: medium;
+    }
+
+    #viewbutton {
+        font-size: medium;
+    }
+
+
+    .products {
+        max-width: 75%;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h2, h4 {
+        font-size: large;
+    }
+
+    .filterrow, .filterbutton {
+        font-size: small;
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .product, .products {
+        grid-template-columns: repeat(1,1fr);
     }
 }
