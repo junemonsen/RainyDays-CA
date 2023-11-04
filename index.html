@@ -11,7 +11,7 @@
    <body>
       <header>
          <nav>
-            <ul>
+            <ul class="desktop-menu">
                <li><a href="index.html" class="active">Home</a></li>
                <li><a href="products.html">Our products</a></li>
                <li class="logo"><a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo"></a></li>
@@ -21,16 +21,23 @@
                <li class="icons"><a href="#"><img src="https://www.svgrepo.com/show/491806/cart-trolley-ui-4.svg" alt="cart"></a></li>
             </ul>
          </nav>
-               <input type="checkbox" id="menu-toggle">
-               <label for="menu-toggle" class="menu-icon">&#9776;</label>
-               <nav class="menu">
-                   <ul>
-                       <li><a href="index.html">Home</a></li>
-                       <li><a href="products.html">Our Products</a></li>
-                       <li><a href="about.html">About Us</a></li>
-                       <li><a href="contact.html">Contact</a></li>
-                   </ul>
-               </nav>
+         <nav role="navigation mobile-menu" class="mobile-menu">
+            <div class="logo" style="width: 100px;"
+              <a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo" width="80px">
+            </div>
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="mobile-menu-items">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Products</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
       </header>
       <main>
          <section>
@@ -56,8 +63,8 @@
                <li class="about">
                   <a href="about.html" class="footertextcolor">About us</a>
                   <ul>
-                     <li><a href="history.html" class="footertextcolor">Our history</a></li>
-                     <li><a href="vision.html" class="footertextcolor">Our Vision</a></li>
+                     <li><a href="history.html" class="footertextcolor" id="ourhistoryfooter">Our history</a></li>
+                     <li><a href="vision.html" class="footertextcolor" id="ourvisionfooter">Our Vision</a></li>
                   </ul>
                </li>
                <li class="about">
@@ -82,32 +89,32 @@
          </section>
          &copy; 2023 Rainy Days 
       </footer>
-        <script>
+      <script>
 
-            let apiurl = "https://api.noroff.dev/api/v1/rainy-days?fbclid=IwAR1O2roL4g7X-esQpG8P7kZ20YK_3luGor8b4KlVeHdLHQAbzToYTTxAZ34";
-            function getProducts() {
-                  fetch(apiurl)
-                  .then(function(response) {
-                     return response.json();
-                  })
-                  .then(function(products) {
-                     let productsContainer = document.querySelector(".front_products");
-                     productsContainer.innerHTML = "";
-                     console.log(products);
-                     for (let i = 0; i < 4 && i < products.length; i++) {
-               const product = products[i];
-               productsContainer.innerHTML += `<a href="productspecific.html?id=${product.id}" style="text-decoration: none; text-align: center; border: 1px solid #eee;">
-                  <img src="${product.image}" alt="Jacket1" width="100" height="60%">
-                  <h4 style="font-size: 28px;">${product.title}</h4>
-                  <h5 style="margin: 0; font-size: 24px; color: #333;">USD ${product.price}</h5>`;
-            }
-         })
-         .catch(function (error) {
-            console.dir(error);
-         });
-            }
-            getProducts();
-            
-        </script>
+        let apiurl = "https://api.noroff.dev/api/v1/rainy-days?fbclid=IwAR1O2roL4g7X-esQpG8P7kZ20YK_3luGor8b4KlVeHdLHQAbzToYTTxAZ34";
+        function getProducts() {
+              fetch(apiurl)
+              .then(function(response) {
+                 return response.json();
+              })
+              .then(function(products) {
+                 let productsContainer = document.querySelector(".front_products");
+                 productsContainer.innerHTML = "";
+                 console.log(products);
+                 for (let i = 0; i < 4 && i < products.length; i++) {
+           const product = products[i];
+           productsContainer.innerHTML += `<a href="productspecific.html?id=${product.id}" style="text-decoration: none; text-align: center; border: 1px solid #eee;">
+              <img src="${product.image}" alt="Jacket1" width="100" height="60%">
+              <h4 style="font-size: 28px;">${product.title}</h4>
+              <h5 style="margin: 0; font-size: 24px; color: #333;">USD ${product.price}</h5>`;
+        }
+     })
+     .catch(function (error) {
+        console.dir(error);
+     });
+        }
+        getProducts();
+        
+    </script>
    </body>
 </html>
