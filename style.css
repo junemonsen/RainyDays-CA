@@ -1367,3 +1367,80 @@ input[type=text], input[type=email], input[type=phone], select {
       }
 
 }
+
+@media (max-width: 669px) {
+      .p {
+       font-size: medium;
+      }
+      
+    .product, .products {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .products2 {
+        text-align: center;
+
+    }
+
+    .descroption_text {
+        font-size: small;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    #productinfo, #instoretxt, #NOKtxt, #h1txt {
+        font-size: small;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    .cartbutton {
+        font-size: medium;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+      .p {
+       font-size: medium;
+      }
+      
+    .product, .products, .front_products {
+        grid-template-columns: repeat(1,1fr);
+        font-size: small;
+    
+    }
+
+    .products2 {
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+
+    .descroption_text {
+        font-size: small;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    #productinfo, #instoretxt, #NOKtxt, #h1txt {
+        font-size: medium;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    #viewbutton, h2 {
+        font-size: large;
+
+    }
+
+
+
+}
+
