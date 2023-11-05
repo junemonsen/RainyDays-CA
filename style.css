@@ -965,7 +965,7 @@ input[type=text], input[type=email], input[type=phone], select {
     margin-bottom: 50px;
 }
 
-/* media for products */
+/* media all over */
 
 @media (max-width:1400px) {
     .product, .products {
@@ -1113,7 +1113,7 @@ input[type=text], input[type=email], input[type=phone], select {
 
 
 
-@media (max-width: 770px) {
+@media (max-width: 889px) {
     .mobile-menu {
         display: flex !important;
         justify-content: space-between;
@@ -1131,10 +1131,39 @@ input[type=text], input[type=email], input[type=phone], select {
         order: -1;
         margin-bottom: 20px;
       }
+
+      .p {
+       font-size: medium;
+      }
       
     .product, .products {
         grid-template-columns: repeat(1,1fr);
+        margin-left: 50px;
     }
+
+    .products2 {
+        text-align: center;
+        
+    }
+
+    .descroption_text {
+        font-size: large;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    #productinfo, #instoretxt, #NOKtxt {
+        font-size: large;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    #viewbutton, h2 {
+        font-size: x-large;
+    }
+
 
     .checkout {
         display: block;
@@ -1161,6 +1190,11 @@ input[type=text], input[type=email], input[type=phone], select {
 
       nav ul li.logo {
         display: none;
+      }
+
+      .instalogo {
+        max-width: fit-content;
+        height: 40px;
       }
 
 }

@@ -104,7 +104,7 @@
                  for (let i = 0; i < 4 && i < products.length; i++) {
            const product = products[i];
            productsContainer.innerHTML += `<a href="productspecific.html?id=${product.id}" style="text-decoration: none; text-align: center; border: 1px solid #eee;">
-              <img src="${product.image}" alt="Jacket1" width="100" height="60%">
+              <img src="${product.image}" alt="Jacket1" max-width="100" height="60%">
               <h4 style="font-size: 28px;">${product.title}</h4>
               <h5 style="margin: 0; font-size: 24px; color: #333;">USD ${product.price}</h5>`;
         }
