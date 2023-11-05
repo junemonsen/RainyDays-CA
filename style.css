@@ -1006,6 +1006,10 @@ input[type=text], input[type=email], input[type=phone], select {
     .aboutpictures {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .p {
+        font-size: medium;
+    }
 }
 
 
