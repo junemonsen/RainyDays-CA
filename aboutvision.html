@@ -11,17 +11,34 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Our products</a></li>
-                <li class="logo"><a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo"></a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="icons"><a href="#"><img src="https://www.svgrepo.com/show/505492/search.svg" alt="search"></a></li>
-                <li class="icons"><a href="#"><img src="https://www.svgrepo.com/show/491806/cart-trolley-ui-4.svg" alt="cart"></a></li>
-            </ul>
+           <ul class="desktop-menu">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="products.html">Our products</a></li>
+              <li class="logo"><a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo"></a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="icons"><a href="#"><img src="https://www.svgrepo.com/show/505492/search.svg" alt="search"></a></li>
+              <li class="icons"><a href="#"><img src="https://www.svgrepo.com/show/491806/cart-trolley-ui-4.svg" alt="cart"></a></li>
+           </ul>
         </nav>
-    </header>
+        <nav role="navigation mobile-menu" class="mobile-menu">
+           <div class="logo" style="width: 100px;"
+             <a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo" width="80px"></a>
+           </div>
+           <div id="menuToggle">
+             <input type="checkbox" />
+             <span></span>
+             <span></span>
+             <span></span>
+             <ul id="mobile-menu-items">
+               <a href="#"><li>Home</li></a>
+               <a href="#"><li>Products</li></a>
+               <a href="#"><li>About</li></a>
+               <a href="#"><li>Contact</li></a>
+             </ul>
+           </div>
+         </nav>
+     </header>
     <main>
         <div class="ourhistorysmall">
         <a href="aboutstory.html"><img src="images/ourhistory2.png" alt="ourhistorysingle"></a>
