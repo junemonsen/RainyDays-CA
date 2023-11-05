@@ -612,9 +612,11 @@ label {
 
 .size-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .size-row button {
+    flex: 0 0 calc(33.33% - 10px);
     width: 40px;
     height: 25px;
     margin-right: -20px;
@@ -1010,6 +1012,12 @@ input[type=text], input[type=email], input[type=phone], select {
     .p {
         font-size: medium;
     }
+
+    .size-row {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
 }
 
 
@@ -1109,6 +1117,10 @@ input[type=text], input[type=email], input[type=phone], select {
       nav ul li.logo {
         display: none;
       }
+
+      .size-row button {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
 
 
@@ -1413,7 +1425,7 @@ input[type=text], input[type=email], input[type=phone], select {
         grid-template-columns: repeat(1,1fr);
         font-size: small;
         margin-bottom: 15px;
-        margin-left: 15px;
+        margin-left: 10px;
     
     }
 
@@ -1440,5 +1452,7 @@ input[type=text], input[type=email], input[type=phone], select {
     #viewbutton, h2 {
         font-size: large;
     }
+
+
 }
 
