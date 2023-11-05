@@ -1197,3 +1197,173 @@ input[type=text], input[type=email], input[type=phone], select {
       }
 
 }
+
+@media (max-width: 720px) {
+    .mobile-menu {
+        display: flex !important;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    
+      nav ul li {
+        margin: 10px 0;
+      }
+    
+      .logo {
+        order: -1;
+        margin-bottom: 20px;
+      }
+
+      .p {
+       font-size: medium;
+      }
+      
+    .product, .products {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .products2 {
+        text-align: center;
+
+    }
+
+    .descroption_text {
+        font-size: medium;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    #productinfo, #instoretxt, #NOKtxt {
+        font-size: medium;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    #viewbutton, h2 {
+        font-size: x-large;
+    }
+
+
+    .checkout {
+        display: block;
+      }
+      .checkout__cart, .checkout__shipping {
+        width: 100%;
+        padding: 0;
+      }
+
+      .footerlist {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .footerlist li {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .footerlist li.about ul {
+        display: none;
+      }
+      .footerlist li:hover ul {
+        display: block;
+      }
+
+      nav ul li.logo {
+        display: none;
+      }
+
+      .instalogo {
+        max-width: fit-content;
+        height: 40px;
+      }
+
+}
+
+@media (max-width: 693px) {
+    .mobile-menu {
+        display: flex !important;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    
+      nav ul li {
+        margin: 10px 0;
+      }
+    
+      .logo {
+        order: -1;
+        margin-bottom: 20px;
+      }
+
+      .p {
+       font-size: medium;
+      }
+      
+    .product, .products {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .products2 {
+        text-align: center;
+
+    }
+
+    .descroption_text {
+        font-size: small;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+
+    #productinfo, #instoretxt, #NOKtxt, #h1txt {
+        font-size: medium;
+        justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    #viewbutton, h2 {
+        font-size: x-large;
+    }
+
+
+    .checkout {
+        display: block;
+      }
+      .checkout__cart, .checkout__shipping {
+        width: 100%;
+        padding: 0;
+      }
+
+      .footerlist {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .footerlist li {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .footerlist li.about ul {
+        display: none;
+      }
+      .footerlist li:hover ul {
+        display: block;
+      }
+
+      nav ul li.logo {
+        display: none;
+      }
+
+      .instalogo {
+        max-width: fit-content;
+        height: 40px;
+      }
+
+}
